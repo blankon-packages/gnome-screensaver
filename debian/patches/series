@@ -14,3 +14,4 @@
 27_lightdm_switch_user.patch
 28_blocking_return.patch
 29_handle_expired_creds.patch
+99-autostart-in-manokwari.patch
