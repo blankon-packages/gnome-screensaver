@@ -1,3 +1,29 @@
+gnome-screensaver (3.6.1-1blankon1) suroboyo; urgency=low
+
+  * Refresh patch
+
+ -- Mahyuddin Idarm Ahmad <dotovr@di.blankon.in>  Thu, 07 Nov 2013 20:27:27 +0700
+
+gnome-screensaver (3.6.1-1) unstable; urgency=low
+
+  [ Jeremy Bicha ]
+  * Update homepage
+
+  [ Laurent Bigonville ]
+  * New upstream release
+  * debian/control.in:
+    - Bump Standards-Version to 3.9.4 (no further changes)
+    - Add autotools-dev to the build-dependencies, so config.{guess,sub} are
+      being updated during build
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/patches/01_fallback_session.patch:
+    + Fix session detection so that gnome-screensaver starts, the session
+      is now called gnome-flashback instead of gnome-fallback.
+  * Upload to unstable.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 13 Oct 2013 23:11:04 +0200
+
 gnome-screensaver (3.6.0-1blankon4) suroboyo; urgency=low
 
   * Added patch 99-autostart-in-manokwari.patch
