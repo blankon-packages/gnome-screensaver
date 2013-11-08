@@ -1,7 +1,6 @@
-#01_fallback_session.patch
 00git_logind_check.patch
+01_blankon_session.patch
 05_dbus_service.patch
-#19_autostart_in_manokwari.patch
 24_use_user_settings.patch
 25_fix_lock_command.patch
 27_lightdm_switch_user.patch
