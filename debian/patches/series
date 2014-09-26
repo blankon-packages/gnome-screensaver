@@ -1,4 +1,3 @@
-00git_logind_check.patch
 01_blankon_session.patch
 05_dbus_service.patch
 24_use_user_settings.patch
