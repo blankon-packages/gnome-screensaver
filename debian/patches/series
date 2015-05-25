@@ -1,6 +1,10 @@
+00git_logind_check.patch
 01_blankon_session.patch
 05_dbus_service.patch
+14_no_fade_on_user_switch.patch
 24_use_user_settings.patch
 25_fix_lock_command.patch
 27_lightdm_switch_user.patch
+31_lock_screen_on_suspend.patch
 10_legacy_scrsvr_inhibit.patch
+

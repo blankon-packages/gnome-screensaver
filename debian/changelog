@@ -1,10 +1,33 @@
-gnome-screensaver (3.6.1-2blankon1) tambora; urgency=low
+gnome-screensaver (3.6.1-4blankon1) tambora; urgency=medium
 
-  * Drop debian/patches:
-    - 00git_logind_check.patch
-    - 01_no_autostart.patch
+  * Added patch for BlankOn 
 
- -- Mahyuddin <yudi.al@gmail.com>  Fri, 26 Sep 2014 21:57:49 +0700
+ -- Mahyuddin <yudi.al@gmail.com>  Mon, 25 May 2015 18:41:38 +0700
+
+gnome-screensaver (3.6.1-4) unstable; urgency=medium
+
+  * Upload to unstable, not experimental. This fixes RC bug.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 15 Dec 2014 13:53:48 +0300
+
+gnome-screensaver (3.6.1-3) experimental; urgency=medium
+
+  * Team upload.
+
+  [ Faidon Liambotis ]
+  * Re-enable support for locking the screen on suspend (closes: #773026).
+    - Build with systemd support by passing --with-systemd=auto to configure
+      and build-depending on libsystemd-login-dev. Use "auto" and a
+      [linux-any] dependency to keep compatibility with non-Linux systems.
+    - 00git_logind_check.patch from Ubuntu/upstream, to make this dependent on
+      just logind, not systemd-as-pid1, as recommended by systemd upstream &
+      Debian systemd maintainers. Drops libsystemd-daemon-dev build-dep.
+    - 31_lock_screen_on_suspend.patch from Ubuntu, to listen for logind's
+      PrepareForSleep signal, similarly to gnome-shell's behavior.
+    - 14_no_fade_on_user_switch.patch from Ubuntu, as to not fade on screen
+      lock. Prevents leaking of the screen contents on resume from suspend.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 15 Dec 2014 13:23:21 +0300
 
 gnome-screensaver (3.6.1-2) unstable; urgency=medium
 
@@ -21,26 +44,6 @@ gnome-screensaver (3.6.1-2) unstable; urgency=medium
       it in
 
  -- Simon McVittie <smcv@debian.org>  Thu, 11 Sep 2014 21:26:06 +0100
-
-gnome-screensaver (3.6.1-1blankon3) tambora; urgency=low
-
-  * Upload for tambora
-  * Bump version GTK+3.0 glib2.0 gnome-desktop3
-
- -- Mahyuddin Ramli <yudi.al@gmail.com>  Fri, 28 Mar 2014 22:02:30 +0700
-
-gnome-screensaver (3.6.1-1blankon2) suroboyo; urgency=low
-
-  * Fix gnome-screensaver not autostart in BlankOn session:
-    - Added 01_blankon_session.patch
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Fri, 08 Nov 2013 20:57:53 +0700
-
-gnome-screensaver (3.6.1-1blankon1) suroboyo; urgency=low
-
-  * Refresh patch
-
- -- Mahyuddin Idarm Ahmad <dotovr@di.blankon.in>  Thu, 07 Nov 2013 20:27:27 +0700
 
 gnome-screensaver (3.6.1-1) unstable; urgency=low
 
@@ -61,34 +64,6 @@ gnome-screensaver (3.6.1-1) unstable; urgency=low
   * Upload to unstable.
 
  -- Emilio Pozuelo Monfort <pochu@debian.org>  Sun, 13 Oct 2013 23:11:04 +0200
-
-gnome-screensaver (3.6.0-1blankon4) suroboyo; urgency=low
-
-  * Added patch 99-autostart-in-manokwari.patch
-    - Fix autostart in Manokwari Shell (BlankOn Session)
-    - This patch to make lock-screen work in Manokwari Shell
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 22 Sep 2013 21:10:10 +0700
-
-gnome-screensaver (3.6.0-1blankon3) suroboyo; urgency=low
-
-  * debian/rules:
-    + Disable move gnome-screensaver.desktop
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 09 Jun 2013 17:01:11 +0700
-
-gnome-screensaver (3.6.0-1blankon2) suroboyo; urgency=low
-
-  * Sync patch with Ubuntu 
-
- -- Mahyuddin Idram Ahmad <dotovr@di.blankon.in>  Sun, 09 Jun 2013 16:11:40 +0700
-
-gnome-screensaver (3.6.0-1blankon1) suroboyo; urgency=low
-
-  * New upstream release
-  * Change Maitainer
-
- -- Mahyuddin <dotovr@di.blankon.in>  Mon, 04 Mar 2013 19:49:28 +0700
 
 gnome-screensaver (3.6.0-1) experimental; urgency=low
 
