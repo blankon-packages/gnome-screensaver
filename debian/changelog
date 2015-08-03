@@ -1,3 +1,37 @@
+gnome-screensaver (3.6.1-7blankon1) tambora; urgency=low
+
+  * New Upstream Release
+  
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Tue, 04 Aug 2015 00:42:24 +0700
+
+gnome-screensaver (3.6.1-7blankon1) tambora; urgency=medium
+
+  * new Upsteram Release
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Mon, 04 Aug 2015 00:19:35 +0700
+
+gnome-screensaver (3.6.1-7) unstable; urgency=medium
+
+  * d/p/0001-gs-lock-plug-Disconnect-signal-handler-from-right-ob.patch:
+    Cherry-pick patch from upstream to disconnect a signal from the right
+    place.
+
+ -- Iain Lane <iain@orangesquash.org.uk>  Mon, 20 Jul 2015 14:19:35 +0100
+
+gnome-screensaver (3.6.1-6) unstable; urgency=medium
+
+  * debian/patches/01_no_autostart.patch: Only autostart in GNOME Flashback
+    sessions (closes: #790632).
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 13 Jul 2015 13:35:28 +0300
+
+gnome-screensaver (3.6.1-5) unstable; urgency=medium
+
+  * Build against the new systemd library (closes: #779746).
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Dmitry Shachnev <mitya57@debian.org>  Mon, 06 Jul 2015 17:11:05 +0300
+
 gnome-screensaver (3.6.1-4blankon2) tambora; urgency=medium
 
   * Added patches:

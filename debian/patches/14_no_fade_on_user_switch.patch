@@ -3,11 +3,9 @@ Bug-Ubuntu: https://launchpad.net/bugs/546578
 Forwarded: not-needed
 Author: Chris Coulson <chris.coulson@canonical.com>
 
-Index: gnome-screensaver-3.4.2/src/gs-manager.c
-===================================================================
---- gnome-screensaver-3.4.2.orig/src/gs-manager.c	2012-02-10 20:11:45.000000000 +1300
-+++ gnome-screensaver-3.4.2/src/gs-manager.c	2012-06-28 10:49:44.203328694 +1200
-@@ -1268,7 +1268,7 @@
+--- a/src/gs-manager.c
++++ b/src/gs-manager.c
+@@ -1268,7 +1268,7 @@ gs_manager_activate (GSManager *manager)
          manager->priv->active = TRUE;
  
          /* fade to black and show windows */
