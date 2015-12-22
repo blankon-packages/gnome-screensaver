@@ -1,3 +1,9 @@
+gnome-screensaver (3.6.1-7+b1blankon1) tambora; urgency=medium
+
+  * Rebuild 
+
+ -- mhy <dotovr@mhy>  Tue, 22 Dec 2015 16:40:03 +0700
+
 gnome-screensaver (3.6.1-7blankon2) tambora; urgency=medium
 
   * Enable autostart 
