@@ -10,11 +10,11 @@ https://bugzilla.gnome.org/show_bug.cgi?id=752202
  src/gs-lock-plug.c | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/src/gs-lock-plug.c b/src/gs-lock-plug.c
-index 1e74d8f..ee4c0f3 100644
---- a/src/gs-lock-plug.c
-+++ b/src/gs-lock-plug.c
-@@ -483,7 +483,7 @@ gs_lock_plug_run (GSLockPlug *plug)
+Index: gnome-screensaver-3.6.1.orig/src/gs-lock-plug.c
+===================================================================
+--- gnome-screensaver-3.6.1.orig.orig/src/gs-lock-plug.c	2012-08-21 01:12:39.000000000 +0800
++++ gnome-screensaver-3.6.1.orig/src/gs-lock-plug.c	2017-10-17 22:46:10.000000000 +0800
+@@ -483,7 +483,7 @@
                  g_signal_handler_disconnect (plug, unmap_handler);
                  g_signal_handler_disconnect (plug, delete_handler);
                  g_signal_handler_disconnect (plug, destroy_handler);
@@ -23,6 +23,3 @@ index 1e74d8f..ee4c0f3 100644
          }
  
          g_object_unref (plug);
--- 
-2.1.4
-

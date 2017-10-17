@@ -1,6 +1,6 @@
 diff -Naur gnome-screensaver-3.6.1.orig/src/gnome-screensaver.desktop.in.in gnome-screensaver-3.6.1/src/gnome-screensaver.desktop.in.in
---- gnome-screensaver-3.6.1.orig/src/gnome-screensaver.desktop.in.in	2017-10-17 21:32:59.705328924 +0800
-+++ gnome-screensaver-3.6.1/src/gnome-screensaver.desktop.in.in	2017-10-17 21:34:13.569998326 +0800
+--- gnome-screensaver-3.6.1.orig/src/gnome-screensaver.desktop.in.in	2012-08-21 01:12:31.000000000 +0800
++++ gnome-screensaver-3.6.1/src/gnome-screensaver.desktop.in.in	2017-10-17 22:29:12.038187536 +0800
 @@ -5,7 +5,7 @@
  Icon=preferences-desktop-screensaver
  Exec=gnome-screensaver

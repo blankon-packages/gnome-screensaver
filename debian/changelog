@@ -1,9 +1,9 @@
 gnome-screensaver (3.6.1-7blankon1) uluwatu; urgency=medium
 
   * New upstream release:
-    - Enable autostart
+    - Add blankon_session.patch
 
- -- AnTo SamalonA <ansamsoftdev@gmail.com>  Tue, 17 Oct 2017 21:46:09 +0800
+ -- AnTo SamalonA <ansamsoftdev@gmail.com>  Tue, 17 Oct 2017 22:40:12 +0800
 
 gnome-screensaver (3.6.1-7) unstable; urgency=medium
 

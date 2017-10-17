@@ -16,9 +16,9 @@ https://bugzilla.gnome.org/show_bug.cgi?id=696264
 ---
 Index: gnome-screensaver-3.6.1.orig/configure.ac
 ===================================================================
---- gnome-screensaver-3.6.1.orig.orig/configure.ac
-+++ gnome-screensaver-3.6.1.orig/configure.ac
-@@ -601,7 +601,7 @@ AC_ARG_WITH(systemd,
+--- gnome-screensaver-3.6.1.orig.orig/configure.ac	2012-10-16 10:28:59.000000000 +0800
++++ gnome-screensaver-3.6.1.orig/configure.ac	2017-10-17 22:44:56.000000000 +0800
+@@ -601,7 +601,7 @@
              [with_systemd=$withval], [with_systemd=auto])
  
  PKG_CHECK_MODULES(SYSTEMD,
@@ -29,8 +29,8 @@ Index: gnome-screensaver-3.6.1.orig/configure.ac
  if test "x$with_systemd" = "xauto" ; then
 Index: gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
 ===================================================================
---- gnome-screensaver-3.6.1.orig.orig/src/gs-listener-dbus.c
-+++ gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
+--- gnome-screensaver-3.6.1.orig.orig/src/gs-listener-dbus.c	2012-08-21 01:12:39.000000000 +0800
++++ gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c	2017-10-17 22:44:56.000000000 +0800
 @@ -25,6 +25,7 @@
  #include <stdio.h>
  #include <time.h>
@@ -47,7 +47,7 @@ Index: gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
  #include <systemd/sd-login.h>
  #endif
  
-@@ -1479,7 +1479,8 @@ gs_listener_init (GSListener *listener)
+@@ -1479,7 +1479,8 @@
          listener->priv = GS_LISTENER_GET_PRIVATE (listener);
  
  #ifdef WITH_SYSTEMD
