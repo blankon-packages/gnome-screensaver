@@ -14,11 +14,11 @@ Drop the now unnecessary linking against libsystemd-daemon.
 
 https://bugzilla.gnome.org/show_bug.cgi?id=696264
 ---
-Index: gnome-screensaver-3.6.1.orig/configure.ac
+Index: gnome-screensaver-3.6.1/configure.ac
 ===================================================================
---- gnome-screensaver-3.6.1.orig.orig/configure.ac	2012-10-16 10:28:59.000000000 +0800
-+++ gnome-screensaver-3.6.1.orig/configure.ac	2017-10-17 22:44:56.000000000 +0800
-@@ -601,7 +601,7 @@
+--- gnome-screensaver-3.6.1.orig/configure.ac
++++ gnome-screensaver-3.6.1/configure.ac
+@@ -601,7 +601,7 @@ AC_ARG_WITH(systemd,
              [with_systemd=$withval], [with_systemd=auto])
  
  PKG_CHECK_MODULES(SYSTEMD,
@@ -27,10 +27,10 @@ Index: gnome-screensaver-3.6.1.orig/configure.ac
                    [have_systemd=yes], [have_systemd=no])
  
  if test "x$with_systemd" = "xauto" ; then
-Index: gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
+Index: gnome-screensaver-3.6.1/src/gs-listener-dbus.c
 ===================================================================
---- gnome-screensaver-3.6.1.orig.orig/src/gs-listener-dbus.c	2012-08-21 01:12:39.000000000 +0800
-+++ gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c	2017-10-17 22:44:56.000000000 +0800
+--- gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
++++ gnome-screensaver-3.6.1/src/gs-listener-dbus.c
 @@ -25,6 +25,7 @@
  #include <stdio.h>
  #include <time.h>
@@ -47,7 +47,7 @@ Index: gnome-screensaver-3.6.1.orig/src/gs-listener-dbus.c
  #include <systemd/sd-login.h>
  #endif
  
-@@ -1479,7 +1479,8 @@
+@@ -1479,7 +1479,8 @@ gs_listener_init (GSListener *listener)
          listener->priv = GS_LISTENER_GET_PRIVATE (listener);
  
  #ifdef WITH_SYSTEMD

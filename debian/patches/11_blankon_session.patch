@@ -1,0 +1,14 @@
+diff -Naur gnome-screensaver_3.6.1.orig/src/gnome-screensaver.desktop.in.in gnome-screensaver_3.6.1/src/gnome-screensaver.desktop.in.in
+--- gnome-screensaver_3.6.1.orig/src/gnome-screensaver.desktop.in.in	2012-08-21 01:12:31.000000000 +0800
++++ gnome-screensaver_3.6.1/src/gnome-screensaver.desktop.in.in	2017-10-18 00:54:58.756553535 +0800
+@@ -4,8 +4,8 @@
+ _Comment=Launch screensaver and locker program
+ Icon=preferences-desktop-screensaver
+ Exec=gnome-screensaver
+-OnlyShowIn=GNOME;
+-AutostartCondition=GNOME3 if-session gnome-fallback
++OnlyShowIn=GNOME-flashback;
++AutostartCondition=GNOME3 unless-session gnome
+ NoDisplay=true
+ X-GNOME-Autostart-Phase=Application
+ X-GNOME-Autostart-Notify=true
