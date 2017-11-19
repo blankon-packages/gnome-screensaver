@@ -1,3 +1,9 @@
+gnome-screensaver (3.6.1-7blankon3) uluwatu; urgency=medium
+
+  * Fix patch
+
+ -- AnTo SamalonA <ansamsoftdev@gmail.com>  Sun, 19 Nov 2017 13:25:52 +0800
+
 gnome-screensaver (3.6.1-7blankon2) uluwatu; urgency=medium
 
   * Renew patch
