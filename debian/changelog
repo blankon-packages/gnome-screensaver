@@ -1,21 +1,33 @@
-gnome-screensaver (3.6.1-7blankon3) uluwatu; urgency=medium
-
-  * Fix patch
-
- -- AnTo SamalonA <ansamsoftdev@gmail.com>  Sun, 19 Nov 2017 13:25:52 +0800
-
-gnome-screensaver (3.6.1-7blankon2) uluwatu; urgency=medium
-
-  * Renew patch
-
- -- AnTo SamalonA <ansamsoftdev@gmail.com>  Fri, 17 Nov 2017 23:08:44 +0800
-
-gnome-screensaver (3.6.1-7blankon1) uluwatu; urgency=medium
+gnome-screensaver (3.6.1-8blankon1) uluwatu; urgency=medium
 
   * New upstream release:
-    - Add blankon_session.patch
+    - Add patch for BlankOn screensaver
 
- -- AnTo SamalonA <ansamsoftdev@gmail.com>  Tue, 17 Oct 2017 22:40:12 +0800
+ -- antosamalona <ansamsoftdev@gmail.com>  Wed, 07 Feb 2018 21:07:33 +0800
+
+gnome-screensaver (3.6.1-8) unstable; urgency=medium
+
+  [ Laurent Bigonville ]
+  * debian/control.in: Drop gnome-icon-theme from the dependencies, do not
+    force an icon theme and rely on the one installed by the metapackages
+
+  [ Jeremy Bicha ]
+  * debian/control.in:
+    - Depend on default-dbus-session-bus | dbus-session-bus instead of
+      dbus-x11
+    - Update Vcs fields for conversion to git
+  * Add debian/gbp.conf
+  * Switch from cdbs to dh
+  * Bump debhelper compat to 11
+  * Add apport hook from Ubuntu
+  * Merge dependency changes from Ubuntu:
+    - Don't depend on gnome-session-bin
+    - Allow xfce4-power-manager as an alternate to gnome-power-manager
+  * Drop unneeded debian/gnome-screensaver.dirs
+  * Drop gnome-screensaver.maintscript, not needed since Wheezy
+  * Bump Standards-Version to 4.1.2
+
+ -- Jeremy Bicha <jbicha@debian.org>  Wed, 20 Dec 2017 21:08:53 -0500
 
 gnome-screensaver (3.6.1-7) unstable; urgency=medium
 

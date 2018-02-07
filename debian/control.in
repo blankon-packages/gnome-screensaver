@@ -4,10 +4,7 @@ Priority: optional
 Maintainer: BlankOn Developers <blankon-dev@googlegroups.com>
 XSBC-Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Uploaders: @GNOME_TEAM@
-Build-Depends: cdbs,
-               debhelper (>= 8.1.0~),
-               dh-autoreconf,
-               autotools-dev,
+Build-Depends: debhelper (>= 11),
                gnome-common,
                gnome-pkg-tools (>= 0.10),
                intltool (>= 0.35.0),
@@ -29,22 +26,19 @@ Build-Depends: cdbs,
                x11proto-xf86vidmode-dev,
                libxxf86vm-dev,
                gsettings-desktop-schemas-dev (>= 2.91.91)
-Standards-Version: 3.9.6
-Vcs-Svn: svn://anonscm.debian.org/pkg-gnome/desktop/unstable/gnome-screensaver
-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnome/desktop/unstable/gnome-screensaver
+Standards-Version: 4.1.2
+Vcs-Git: https://anonscm.debian.org/git/pkg-gnome/gnome-screensaver.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-gnome/gnome-screensaver.git
 Homepage: https://wiki.gnome.org/GnomeScreensaver
 
 Package: gnome-screensaver
 Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends},
          ${misc:Depends},
-         dbus-x11,
-         gnome-icon-theme (>= 2.15.90),
-         gnome-session-bin (>= 3.0),
+         default-dbus-session-bus | dbus-session-bus,
          gsettings-desktop-schemas (>= 2.91.92)
 Breaks: gnome-session-flashback (<< 3.8.1-1~)
-Recommends: gnome-power-manager,
+Recommends: gnome-power-manager | xfce4-power-manager,
             libpam-gnome-keyring
 Description: GNOME screen saver and locker
  gnome-screensaver is a screen saver and locker that aims to have simple,

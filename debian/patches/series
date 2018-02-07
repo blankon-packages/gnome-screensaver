@@ -4,5 +4,4 @@
 31_lock_screen_on_suspend.patch
 libsystemd.patch
 0001-gs-lock-plug-Disconnect-signal-handler-from-right-ob.patch
-#blankon-session.patch
-001_blankon_screenserver.patch
+blankon-screensaver.patch

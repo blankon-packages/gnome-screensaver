@@ -1,0 +1,19 @@
+Description: Patch for BlankOn screensaver
+ .
+ gnome-screensaver (3.6.1-8blankon1) uluwatu; urgency=medium
+ .
+   * New upstream release:
+     - Add patch for BlankOn screensaver
+Author: antosamalona <ansamsoftdev@gmail.com>
+
+--- gnome-screensaver-3.6.1.orig/src/gnome-screensaver.desktop.in
++++ gnome-screensaver-3.6.1/src/gnome-screensaver.desktop.in
+@@ -5,7 +5,7 @@ _Comment=Launch screensaver and locker p
+ Icon=preferences-desktop-screensaver
+ Exec=gnome-screensaver
+ OnlyShowIn=GNOME;
+-AutostartCondition=GNOME3 if-session gnome-fallback
++AutostartCondition=GNOME3 unless-session gnome
+ NoDisplay=true
+ X-GNOME-Autostart-Phase=Application
+ X-GNOME-Autostart-Notify=true
